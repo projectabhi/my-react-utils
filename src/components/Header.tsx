@@ -53,7 +53,7 @@ const Header = () => {
       </div>
       <NavbarCollapse>
         <NavbarLink
-          href="#"
+          href="/home"
           active
           className="text-gray-700 md:hover:text-primary-700 dark:text-gray-200"
         >

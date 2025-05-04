@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import FooterPage from "./components/FooterPage";
 import { useEffect, useState } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,6 +24,17 @@ function App() {
         ) : (
           <div>
             <Header></Header>
+            <div>
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Home />}>
+                    <Route index element={<Home />} />
+                    <Route path="contact" element={<Home />} />
+                    <Route path="*" element={<Home />} />
+                  </Route>
+                </Routes>
+              </BrowserRouter>
+            </div>
             <FooterPage></FooterPage>
           </div>
         )}

@@ -14,14 +14,14 @@ import reactSvg from "../assets/react.svg";
 
 const Header = () => {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid>
       <NavbarBrand href="https://flowbite-react.com">
         <img
           src={reactSvg}
           className="mr-3 h-6 sm:h-9"
           alt="Flowbite React Logo"
         />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        <span className="text-gray-700 md:hover:text-primary-700 dark:text-gray-200">
           Flowbite React
         </span>
       </NavbarBrand>
@@ -52,7 +52,11 @@ const Header = () => {
         <NavbarToggle />
       </div>
       <NavbarCollapse>
-        <NavbarLink href="#" active>
+        <NavbarLink
+          href="#"
+          active
+          className="text-gray-700 md:hover:text-primary-700 dark:text-gray-200"
+        >
           Home
         </NavbarLink>
         <NavbarLink href="#">About</NavbarLink>

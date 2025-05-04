@@ -54,12 +54,11 @@ const Header = () => {
       <NavbarCollapse>
         <NavbarLink
           href="/home"
-          active
           className="text-gray-700 md:hover:text-primary-700 dark:text-gray-200"
         >
-          Home
+          useRef
         </NavbarLink>
-        <NavbarLink href="#">About</NavbarLink>
+        <NavbarLink href="/about">useMemo</NavbarLink>
         <NavbarLink href="#">Services</NavbarLink>
         <NavbarLink href="#">Pricing</NavbarLink>
         <NavbarLink href="#">Contact</NavbarLink>

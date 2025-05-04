@@ -10,6 +10,7 @@ const About = () => {
   }, [number]);
 
   const themeStyles = useMemo(() => {
+    // when you want the same object instead of re-rendering and create a new referrence of themeStyles
     console.log("Theme style", dark);
     return {
       backgroundColor: dark ? "black" : "white",

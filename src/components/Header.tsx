@@ -56,7 +56,7 @@ const Header = () => {
           href="/home"
           className="text-gray-700 md:hover:text-primary-700 dark:text-gray-200"
         >
-          useRef
+          useEffect
         </NavbarLink>
         <NavbarLink href="/about">useMemo</NavbarLink>
         <NavbarLink href="#">Services</NavbarLink>

@@ -22,7 +22,7 @@ const Home = () => {
     <>
       <div className="custom-body">
         <pre className="text-gray-700 md:hover:text-primary-700 dark:text-gray-200">
-          Usage of useRef (open devtools for proper visualization)
+          Usage of useEffect (open devtools for proper visualization)
         </pre>
         <button
           type="button"
